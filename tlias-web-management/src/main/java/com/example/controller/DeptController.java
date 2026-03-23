@@ -4,10 +4,7 @@ import com.example.pojo.Dept;
 import com.example.pojo.Result;
 import com.example.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,5 +21,16 @@ public class DeptController {
         List<Dept> deptList = deptService.findAll();
         return Result.success(deptList);
     }
+
+    /**
+     * 根据id删除部门 - delete http://localhost:8080/depts?id=1
+     */
+    @DeleteMapping("/depts")
+    public Result delete(Integer id){
+        System.out.println("删除部门：" + id);
+        deptService.deleteById(id);
+        return Result.success();
+    }
+
 
 }
