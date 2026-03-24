@@ -32,5 +32,14 @@ public class DeptController {
         return Result.success();
     }
 
+    /**
+     * 新增部门 - POST http://localhost:8080/depts   请求参数：{"name":"研发部"}
+     */
+    @PostMapping("/depts")
+    public Result save(@RequestBody Dept dept){
+        System.out.println("新增部门, dept=" + dept);
+        deptService.save(dept);
+        return Result.success();
+    }
 
 }
