@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RequestMapping("/depts")
 @RestController
 public class DeptController {
 
@@ -15,7 +16,8 @@ public class DeptController {
     private DeptService deptService;
 
     //  @RequestMapping(value = "/depts",method = RequestMethod.GET) // 这种有点繁琐
-    @GetMapping("/depts")
+    //  @GetMapping("/depts") // 使用 @RequestMapping("/depts") 统一处理
+    @GetMapping
     public Result list() {
         System.out.println("查询全部部门数据");
         List<Dept> deptList = deptService.findAll();
@@ -25,7 +27,8 @@ public class DeptController {
     /**
      * 根据id删除部门 - delete http://localhost:8080/depts?id=1
      */
-    @DeleteMapping("/depts")
+    // @DeleteMapping("/depts")   // 使用 @RequestMapping("/depts") 统一处理
+    @DeleteMapping
     public Result delete(Integer id){
         System.out.println("删除部门：" + id);
         deptService.deleteById(id);
@@ -35,7 +38,8 @@ public class DeptController {
     /**
      * 新增部门 - POST http://localhost:8080/depts   请求参数：{"name":"研发部"}
      */
-    @PostMapping("/depts")
+    // @PostMapping("/depts") // 使用 @RequestMapping("/depts") 统一处理
+    @PostMapping
     public Result save(@RequestBody Dept dept){
         System.out.println("新增部门, dept=" + dept);
         deptService.save(dept);
@@ -46,7 +50,8 @@ public class DeptController {
     /**
      * 根据ID查询 - GET http://localhost:8080/depts/1
      */
-    @GetMapping("/depts/{id}")
+    // @GetMapping("/depts/{id}")  // 使用 @RequestMapping("/depts") 统一处理
+    @GetMapping("/{id}")
     public Result getById(@PathVariable Integer id){
         System.out.println("查询部门：" + id);
         Dept dept = deptService.getById(id);
@@ -56,7 +61,8 @@ public class DeptController {
     /**
      * 修改部门 - PUT http://localhost:8080/depts  请求参数：{"id":1,"name":"研发部"}
      */
-    @PutMapping("/depts")
+    // @PutMapping("/depts") // 使用 @RequestMapping("/depts") 统一处理
+    @PutMapping
     public Result update(@RequestBody Dept dept){
         System.out.println("修改部门：" + dept);
         deptService.update(dept);
