@@ -42,4 +42,16 @@ public class DeptController {
         return Result.success();
     }
 
+
+    /**
+     * 根据ID查询 - GET http://localhost:8080/depts/1
+     */
+    @GetMapping("/depts/{id}")
+    public Result getById(@PathVariable Integer id){
+        System.out.println("查询部门：" + id);
+        Dept dept = deptService.getById(id);
+        return Result.success(dept);
+    }
+
+
 }

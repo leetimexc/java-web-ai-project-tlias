@@ -32,4 +32,9 @@ public class DeptServicelmpl implements DeptService {
         //保存部门
         deptMapper.insert(dept);
     }
+
+    @Override
+    public Dept getById(Integer id) {
+        return deptMapper.getById(id);
+    }
 }

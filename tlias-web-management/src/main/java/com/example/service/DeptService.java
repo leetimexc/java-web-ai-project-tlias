@@ -20,4 +20,9 @@ public interface DeptService {
      * 新增部门
      */
     void save(Dept dept);
+
+    /**
+     * 根据id查询部门
+     */
+    Dept getById(Integer id);
 }
