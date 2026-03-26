@@ -1,7 +1,7 @@
-/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/TliasWebManagementApplication.java
-/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/controller/DeptController.java
-/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/mapper/DeptMapper.java
-/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/pojo/Dept.java
-/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/pojo/Result.java
-/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/service/DeptService.java
 /Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/service/impl/DeptServicelmpl.java
+/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/pojo/Result.java
+/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/controller/DeptController.java
+/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/pojo/Dept.java
+/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/mapper/DeptMapper.java
+/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/service/DeptService.java
+/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/src/main/java/com/example/TliasWebManagementApplication.java

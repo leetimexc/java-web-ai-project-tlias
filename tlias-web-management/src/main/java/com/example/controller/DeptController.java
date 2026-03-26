@@ -3,11 +3,13 @@ package com.example.controller;
 import com.example.pojo.Dept;
 import com.example.pojo.Result;
 import com.example.service.DeptService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RequestMapping("/depts")
 @RestController
 public class DeptController {
@@ -20,6 +22,7 @@ public class DeptController {
     @GetMapping
     public Result list() {
         System.out.println("查询全部部门数据");
+        log.info("查询部门列表");
         List<Dept> deptList = deptService.findAll();
         return Result.success(deptList);
     }
@@ -31,6 +34,7 @@ public class DeptController {
     @DeleteMapping
     public Result delete(Integer id){
         System.out.println("删除部门：" + id);
+        log.info("根据id删除部门, id: {}" , id);
         deptService.deleteById(id);
         return Result.success();
     }
@@ -42,6 +46,7 @@ public class DeptController {
     @PostMapping
     public Result save(@RequestBody Dept dept){
         System.out.println("新增部门, dept=" + dept);
+        log.info("新增部门, dept: {}" , dept);
         deptService.save(dept);
         return Result.success();
     }
@@ -54,6 +59,7 @@ public class DeptController {
     @GetMapping("/{id}")
     public Result getById(@PathVariable Integer id){
         System.out.println("查询部门：" + id);
+        log.info("根据ID查询, id: {}" , id);
         Dept dept = deptService.getById(id);
         return Result.success(dept);
     }
@@ -65,6 +71,7 @@ public class DeptController {
     @PutMapping
     public Result update(@RequestBody Dept dept){
         System.out.println("修改部门：" + dept);
+        log.info("修改部门, dept: {}" , dept);
         deptService.update(dept);
         return Result.success();
     }
