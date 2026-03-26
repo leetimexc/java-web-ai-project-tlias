@@ -53,5 +53,15 @@ public class DeptController {
         return Result.success(dept);
     }
 
+    /**
+     * 修改部门 - PUT http://localhost:8080/depts  请求参数：{"id":1,"name":"研发部"}
+     */
+    @PutMapping("/depts")
+    public Result update(@RequestBody Dept dept){
+        System.out.println("修改部门：" + dept);
+        deptService.update(dept);
+        return Result.success();
+    }
+
 
 }

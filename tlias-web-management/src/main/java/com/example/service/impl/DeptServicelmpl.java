@@ -37,4 +37,12 @@ public class DeptServicelmpl implements DeptService {
     public Dept getById(Integer id) {
         return deptMapper.getById(id);
     }
+
+    @Override
+    public void update(Dept dept) {
+        //补全基础属性
+        dept.setUpdateTime(LocalDateTime.now());
+        //保存部门
+        deptMapper.update(dept);
+    }
 }
