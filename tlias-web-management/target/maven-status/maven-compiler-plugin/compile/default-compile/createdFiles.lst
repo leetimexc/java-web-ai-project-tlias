@@ -1,7 +1,0 @@
-com/example/TliasWebManagementApplication.class
-com/example/mapper/DeptMapper.class
-com/example/pojo/Result.class
-com/example/controller/DeptController.class
-com/example/pojo/Dept.class
-com/example/service/impl/DeptServicelmpl.class
-com/example/service/DeptService.class

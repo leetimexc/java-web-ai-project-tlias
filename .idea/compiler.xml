@@ -8,7 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/公司/九影网络/Java相关/Java学生表-增删改查/maven-repository_demo/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$USER_HOME$/公司/九影网络/Java相关/Java学生表-增删改查/maven-repository_demo/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+          <entry name="$USER_HOME$/公司/九影网络/Java相关/Java学生表-增删改查/maven-repository_demo/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
         <module name="tlias-web-management" />
       </profile>
