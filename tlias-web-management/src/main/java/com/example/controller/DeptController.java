@@ -21,7 +21,7 @@ public class DeptController {
     //  @GetMapping("/depts") // 使用 @RequestMapping("/depts") 统一处理
     @GetMapping
     public Result list() {
-        System.out.println("查询全部部门数据");
+        // System.out.println("查询全部部门数据");
         log.info("查询部门列表");
         List<Dept> deptList = deptService.findAll();
         return Result.success(deptList);
@@ -33,7 +33,7 @@ public class DeptController {
     // @DeleteMapping("/depts")   // 使用 @RequestMapping("/depts") 统一处理
     @DeleteMapping
     public Result delete(Integer id){
-        System.out.println("删除部门：" + id);
+        // System.out.println("删除部门：" + id);
         log.info("根据id删除部门, id: {}" , id);
         deptService.deleteById(id);
         return Result.success();
@@ -45,7 +45,7 @@ public class DeptController {
     // @PostMapping("/depts") // 使用 @RequestMapping("/depts") 统一处理
     @PostMapping
     public Result save(@RequestBody Dept dept){
-        System.out.println("新增部门, dept=" + dept);
+        // System.out.println("新增部门, dept=" + dept);
         log.info("新增部门, dept: {}" , dept);
         deptService.save(dept);
         return Result.success();
@@ -58,7 +58,7 @@ public class DeptController {
     // @GetMapping("/depts/{id}")  // 使用 @RequestMapping("/depts") 统一处理
     @GetMapping("/{id}")
     public Result getById(@PathVariable Integer id){
-        System.out.println("查询部门：" + id);
+        // System.out.println("查询部门：" + id);
         log.info("根据ID查询, id: {}" , id);
         Dept dept = deptService.getById(id);
         return Result.success(dept);
@@ -70,11 +70,9 @@ public class DeptController {
     // @PutMapping("/depts") // 使用 @RequestMapping("/depts") 统一处理
     @PutMapping
     public Result update(@RequestBody Dept dept){
-        System.out.println("修改部门：" + dept);
+        // System.out.println("修改部门：" + dept);
         log.info("修改部门, dept: {}" , dept);
         deptService.update(dept);
         return Result.success();
     }
-
-
 }
