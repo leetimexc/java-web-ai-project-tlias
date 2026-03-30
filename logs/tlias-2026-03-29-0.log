@@ -8,3 +8,5 @@
 2026-03-29 04:41:17.048 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
 2026-03-29 04:41:17.078 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
 2026-03-29 04:41:17.085 [main] INFO  com.example.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.312 seconds (process running for 4.52)
+2026-03-29 17:13:07.461 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-29 17:13:09.512 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown-Graceful shutdown complete
