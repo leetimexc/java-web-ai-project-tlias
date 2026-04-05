@@ -19,4 +19,7 @@ public interface EmpMapper {
      */
     @Select("select e.*, d.name deptName from emp as e left join dept as d on e.dept_id = d.id limit #{start}, #{pageSize}")
     public List<Emp> list(Integer start , Integer pageSize);
+
+    // List<Emp> page(Integer start, Integer pageSize);
+
 }
