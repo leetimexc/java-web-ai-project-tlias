@@ -4,6 +4,7 @@ import com.example.pojo.Emp;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Mapper
@@ -23,7 +24,10 @@ public interface EmpMapper {
      * 查询所有的员工及其对应的部门名称
      * 使用pagehelper插件
      */
-    @Select("select e.*, d.name deptName from emp as e left join dept as d on e.dept_id = d.id")
-    public List<Emp> list();
-
+//    @Select("select e.*, d.name deptName from emp as e left join dept as d on e.dept_id = d.id")
+//    public List<Emp> list();
+    /**
+     * 查询所有的员工及其对应的部门名称
+     */
+    public List<Emp> list(String name, Integer gender, LocalDate begin, LocalDate end);
 }

@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDate;
+
 /**
  * 员工管理
  */
@@ -23,9 +25,11 @@ public class EmpController {
 
     @GetMapping
     public Result page(@RequestParam(defaultValue = "1") Integer page ,
-                       @RequestParam(defaultValue = "10") Integer pageSize){
+                       @RequestParam(defaultValue = "10") Integer pageSize,
+                       String name, Integer gender, LocalDate begin, LocalDate end){
         log.info("分页查询，参数：page={}，pageSize={}", page, pageSize);
-        PageResult pageResult = empService.page(page, pageSize);
+//        PageResult pageResult = empService.page(page, pageSize);
+        PageResult pageResult = empService.page(page, pageSize, name, gender, begin, end);
         return Result.success(pageResult);
     }
 }
