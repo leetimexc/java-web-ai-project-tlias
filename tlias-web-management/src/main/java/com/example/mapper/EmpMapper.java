@@ -1,6 +1,7 @@
 package com.example.mapper;
 
 import com.example.pojo.Emp;
+import com.example.pojo.EmpQueryParam;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -29,5 +30,9 @@ public interface EmpMapper {
     /**
      * 查询所有的员工及其对应的部门名称
      */
-    public List<Emp> list(String name, Integer gender, LocalDate begin, LocalDate end);
+    // public List<Emp> list(String name, Integer gender, LocalDate begin, LocalDate end);
+    /**
+     * 根据查询条件查询员工
+     */
+    List<Emp> list(EmpQueryParam empQueryParam);
 }
