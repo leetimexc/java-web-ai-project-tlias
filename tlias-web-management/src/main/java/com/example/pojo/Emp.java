@@ -23,5 +23,5 @@ public class Emp {
     private LocalDateTime updateTime; //修改时间
 
     //封装部门名称数
-    // private String deptName; //部门名称
+     private String deptName; //部门名称
 }
