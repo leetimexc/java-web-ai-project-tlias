@@ -11,16 +11,23 @@ import java.util.List;
  */
 @Mapper
 public interface EmpMapper {
+
+    // ------------------------------------- 1. 原始分页查询实现
     /**
      * 查询员工数量
      */
-    @Select("select count(*) from emp e left join dept d on e.dept_id = d.id;")
-    public long count();
+    // @Select("select count(*) from emp e left join dept d on e.dept_id = d.id;")
+    // public long count();
 
     /**
      * 分页查询
      */
-    @Select("select e.*, d.name deptName from emp e left join dept d on e.dept_id = d.id " +
-            "order by e.update_time desc limit #{start},#{pageSize};")
-    public List<Emp> list(Integer start, Integer pageSize);
+    //  @Select("select e.*, d.name deptName from emp e left join dept d on e.dept_id = d.id " +
+    //     "order by e.update_time desc limit #{start},#{pageSize};")
+    //  public List<Emp> list(Integer start, Integer pageSize);
+
+    // ------------------------------------- 2. 使用PageHelper依赖
+    @Select("select e.*, d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc")
+    public List<Emp> list();
+
 }
