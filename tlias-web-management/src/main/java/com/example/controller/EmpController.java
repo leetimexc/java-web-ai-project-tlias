@@ -30,7 +30,7 @@ public class EmpController {
                        @RequestParam(defaultValue = "10") Integer pageSize){
         // 比较繁琐 ， 推荐使用 springboot的 注解 @RequestParam
         // if (page == null || page <= 0){
-        //   page = 1;
+        //  page = 1;
         // }
         log.info("分页查询，参数：page={}，pageSize={}",page,pageSize);
         PageResult<Emp> pageResult = empService.page(page,pageSize);
