@@ -2,6 +2,7 @@ package com.example.service.impl;
 
 import com.example.mapper.EmpMapper;
 import com.example.pojo.Emp;
+import com.example.pojo.EmpQueryParam;
 import com.example.pojo.PageResult;
 import com.example.service.EmpService;
 import com.github.pagehelper.Page;
@@ -40,13 +41,26 @@ public class EmpServiceImpl implements EmpService {
      * 1. 定义的SQL语句结尾不能加分号；
      * 2. PageHelper 仅仅能对紧跟在其后的第一个查询语句进行分页处理
      */
-    @Override
+    /* @Override
     public PageResult<Emp> page(Integer page, Integer pageSize, String name, Integer gender, LocalDate begin, LocalDate end) {
         // 1. 设置分页参数（PageHelper）
         PageHelper.startPage(page, pageSize);
 
         // 2. 执行查询（PageHelper）
         List<Emp> empList = empMapper.list(name, gender, begin, end);
+        // tips: 这里对应上面的注意事项2，后面再加不会自动添加分页处理功能
+
+        // 3. 解析查询结果，并封住
+        Page<Emp> p = (Page<Emp>) empList;
+        return new PageResult<Emp>(p.getTotal(), p.getResult());
+    } */
+    @Override
+    public PageResult<Emp> page(EmpQueryParam empQueryParam) {
+        // 1. 设置分页参数（PageHelper）
+        PageHelper.startPage(empQueryParam.getPage(), empQueryParam.getPageSize());
+
+        // 2. 执行查询（PageHelper）
+        List<Emp> empList = empMapper.list(empQueryParam);
         // tips: 这里对应上面的注意事项2，后面再加不会自动添加分页处理功能
 
         // 3. 解析查询结果，并封住

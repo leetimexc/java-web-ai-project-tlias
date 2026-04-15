@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import com.example.pojo.Emp;
+import com.example.pojo.EmpQueryParam;
 import com.example.pojo.PageResult;
 import com.example.pojo.Result;
 import com.example.service.EmpService;
@@ -28,7 +29,7 @@ public class EmpController {
     /*
     * 分页查询
      */
-    @GetMapping
+    /* @GetMapping
     public Result page(@RequestParam(defaultValue = "1") Integer page,
                        @RequestParam(defaultValue = "10") Integer pageSize,
                        String name,
@@ -44,6 +45,16 @@ public class EmpController {
                 page,pageSize,name,gender,begin,end
         );
         PageResult<Emp> pageResult = empService.page(page,pageSize,name,gender,begin,end);
+        return Result.success(pageResult);
+    }*/
+
+    /*
+     * 分页查询
+     */
+    @GetMapping
+    public Result page(EmpQueryParam empQueryParam){
+        log.info("分页查询，参数：{}",empQueryParam);
+        PageResult<Emp> pageResult = empService.page(empQueryParam);
         return Result.success(pageResult);
     }
 

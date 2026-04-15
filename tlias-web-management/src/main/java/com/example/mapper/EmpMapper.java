@@ -1,6 +1,7 @@
 package com.example.mapper;
 
 import com.example.pojo.Emp;
+import com.example.pojo.EmpQueryParam;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -29,5 +30,10 @@ public interface EmpMapper {
 
     // ------------------------------------- 2. 使用PageHelper依赖
     // @Select("select e.*, d.name deptName from emp e left join dept d on e.dept_id = d.id order by e.update_time desc")
-    public List<Emp> list(String name, Integer gender, LocalDate begin, LocalDate end);
+    // public List<Emp> list(String name, Integer gender, LocalDate begin, LocalDate end);
+
+    /**
+     * 条件查询员工信息
+     */
+    public List<Emp> list(EmpQueryParam empQueryParam);
 }
