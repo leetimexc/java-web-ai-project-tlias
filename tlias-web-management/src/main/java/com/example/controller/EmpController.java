@@ -62,5 +62,6 @@ public class EmpController {
     public Result save(@RequestBody Emp emp){
         log.info("新增员工：{}",emp);
         empService.save(emp);
+        return Result.success();
     }
 }
