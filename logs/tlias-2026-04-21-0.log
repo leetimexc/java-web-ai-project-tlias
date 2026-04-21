@@ -513,3 +513,7 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '18809091234'
 2026-04-21 02:53:06.379 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
 2026-04-21 02:53:06.381 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@917003798 wrapping com.mysql.cj.jdbc.ConnectionImpl@3e672db]
 2026-04-21 02:53:06.388 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@917003798 wrapping com.mysql.cj.jdbc.ConnectionImpl@3e672db] after transaction
+2026-04-21 02:55:56.864 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-21 02:55:58.877 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-04-21 02:55:58.881 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-04-21 02:55:58.886 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.

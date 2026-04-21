@@ -76,7 +76,7 @@ public class EmpServiceImpl implements EmpService {
         return new PageResult<Emp>(p.getTotal(), p.getResult());
     }
 
-    @Transactional // 添加事务注解
+    @Transactional // 添加事务注解 - 默认出现运行时异常RuntimeException时，事务才会生效 ,如果想全部生效，使用 @Transactional(roll)
     @Override
     public void save(Emp emp) {
         // 1. 保存员工基本信息
@@ -84,7 +84,10 @@ public class EmpServiceImpl implements EmpService {
         emp.setCreateTime(LocalDateTime.now());
         empMapper.insert(emp);
 
-         // int i = 1/0; // 异常测试事务
+        // int i = 1/0; // 异常测试事务
+        /* if (true){
+            throw new Exception("保存员工信息异常");
+        }*/
 
         // 2. 保存员工工作经历信息
         List<EmpExpr> exprList = emp.getExprList();
