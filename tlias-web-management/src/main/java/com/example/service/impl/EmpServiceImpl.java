@@ -84,6 +84,8 @@ public class EmpServiceImpl implements EmpService {
             // 1. 保存员工基本信息
             emp.setCreateTime(LocalDateTime.now());
             emp.setCreateTime(LocalDateTime.now());
+
+            //2.保存员工基本信息
             empMapper.insert(emp);
 
             // int i = 1/0; // 异常测试事务
@@ -91,7 +93,7 @@ public class EmpServiceImpl implements EmpService {
                 throw new Exception("保存员工信息异常");
             }*/
 
-            // 2. 保存员工工作经历信息
+            //3. 保存员工的工作经历信息 - 批量
             List<EmpExpr> exprList = emp.getExprList();
             if(!CollectionUtils.isEmpty(exprList)){
                 // 遍历集合，为empId赋值
@@ -103,9 +105,8 @@ public class EmpServiceImpl implements EmpService {
         } finally {
             // 记录操作日志
             EmpLog empLog = new EmpLog(null, LocalDateTime.now(), "新增员工信息:"+emp);
-            empLogService.insetLog(empLog);
+            empLogService.insertLog(empLog);
         }
-
 
     }
 

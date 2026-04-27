@@ -17,7 +17,7 @@ public class EmpLogServicelmpl implements EmpLogService {
 
     @Transactional(propagation = Propagation.REQUIRES_NEW) //需要在一个新的事务中运行
     @Override
-    public void insert(EmpLog empLog) {
+    public void insertLog(EmpLog empLog) {
         empLogMapper.insert(empLog);
     }
 

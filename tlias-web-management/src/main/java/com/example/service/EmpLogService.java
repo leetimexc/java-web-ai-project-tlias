@@ -4,6 +4,7 @@ import com.example.pojo.EmpLog;
 
 public interface EmpLogService {
 
-    public void insetLog(EmpLog empLog);
+    // 记录新增员工日志
+    public void insertLog(EmpLog empLog);
 
 }
