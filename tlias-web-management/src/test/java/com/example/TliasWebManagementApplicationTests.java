@@ -14,9 +14,9 @@ class TliasWebManagementApplicationTests {
 	@Autowired
 	private EmpMapper empMapper;
 
-	@Test
-	public void testList(){
-		List<Emp> empList = empMapper.list();
-		empList.forEach(System.out::println);
-	}
+//	@Test
+//	public void testList(){
+//		List<Emp> empList = empMapper.list();
+//		empList.forEach(System.out::println);
+//	}
 }

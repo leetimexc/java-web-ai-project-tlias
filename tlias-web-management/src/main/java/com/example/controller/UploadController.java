@@ -8,6 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.UUID;
 
 @Slf4j
 @RestController
@@ -18,8 +19,14 @@ public class UploadController {
         log.info("接受参数：{},{},{}", name, age, file);
         // 获取原始文件名
         String originalFilename = file.getOriginalFilename();
+
+        //新的文件名
+        String extension = originalFilename.substring(originalFilename.lastIndexOf("."));
+        String newFilename = UUID.randomUUID().toString() + extension;
+
+        String pathName = "/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/images/";
         // 保存文件
-        file.transferTo(new File("Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/images/"+originalFilename));
+        file.transferTo(new File(pathName + newFilename));
         return Result.success();
     }
 }
