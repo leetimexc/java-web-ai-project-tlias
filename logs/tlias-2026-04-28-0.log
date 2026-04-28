@@ -54,3 +54,4 @@
 2026-04-28 23:29:34.319 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
 2026-04-28 23:29:34.325 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 5 ms
 2026-04-28 23:32:11.950 [http-nio-8080-exec-1] INFO  com.example.controller.UploadController-接受参数：张三,18,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@3781adbf
+2026-04-28 23:59:58.363 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
