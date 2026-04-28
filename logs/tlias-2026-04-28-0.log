@@ -1,0 +1,56 @@
+2026-04-28 04:50:47.614 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-28 04:50:47.622 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-04-28 04:50:47.632 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 10 ms
+2026-04-28 05:07:10.135 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-28 05:07:12.158 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-04-28 23:16:29.179 [main] INFO  com.example.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.7 with PID 4825 (/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/target/classes started by li_shuai in /Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias)
+2026-04-28 23:16:29.182 [main] INFO  com.example.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2026-04-28 23:16:30.436 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-04-28 23:16:30.450 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-28 23:16:30.452 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-04-28 23:16:30.452 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-28 23:16:30.494 [main] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer-Root WebApplicationContext: initialization completed in 1258 ms
+2026-04-28 23:16:31.333 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-04-28 23:16:31.353 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-04-28 23:16:31.360 [main] INFO  com.example.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.658 seconds (process running for 4.921)
+2026-04-28 23:16:49.562 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-28 23:16:49.562 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-04-28 23:16:49.564 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2026-04-28 23:17:12.971 [http-nio-8080-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2026-04-28 23:17:12.973 [http-nio-8080-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2026-04-28 23:17:32.142 [http-nio-8080-exec-5] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2026-04-28 23:17:32.143 [http-nio-8080-exec-5] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2026-04-28 23:25:40.951 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-28 23:25:49.969 [main] INFO  com.example.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.7 with PID 4988 (/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/target/classes started by li_shuai in /Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias)
+2026-04-28 23:25:49.972 [main] INFO  com.example.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2026-04-28 23:25:51.429 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-04-28 23:25:51.447 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-28 23:25:51.450 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-04-28 23:25:51.451 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-28 23:25:51.512 [main] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer-Root WebApplicationContext: initialization completed in 1478 ms
+2026-04-28 23:25:52.646 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-04-28 23:25:52.664 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-04-28 23:25:52.668 [main] INFO  com.example.TliasWebManagementApplication-Started TliasWebManagementApplication in 3.463 seconds (process running for 5.571)
+2026-04-28 23:25:54.155 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-28 23:25:54.155 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-04-28 23:25:54.157 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-04-28 23:25:58.426 [http-nio-8080-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2026-04-28 23:25:58.427 [http-nio-8080-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2026-04-28 23:26:45.813 [http-nio-8080-exec-7] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2026-04-28 23:26:45.814 [http-nio-8080-exec-7] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver-Resolved [org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded]
+2026-04-28 23:27:50.223 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-28 23:27:52.243 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-04-28 23:27:54.957 [main] INFO  com.example.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.7 with PID 5016 (/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/target/classes started by li_shuai in /Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias)
+2026-04-28 23:27:54.959 [main] INFO  com.example.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2026-04-28 23:27:56.255 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-04-28 23:27:56.270 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-28 23:27:56.272 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-04-28 23:27:56.272 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-28 23:27:56.312 [main] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer-Root WebApplicationContext: initialization completed in 1308 ms
+2026-04-28 23:27:57.055 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-04-28 23:27:57.071 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-04-28 23:27:57.076 [main] INFO  com.example.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.589 seconds (process running for 3.702)
+2026-04-28 23:29:34.318 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-28 23:29:34.319 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-04-28 23:29:34.325 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 5 ms
+2026-04-28 23:32:11.950 [http-nio-8080-exec-1] INFO  com.example.controller.UploadController-接受参数：张三,18,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@3781adbf
