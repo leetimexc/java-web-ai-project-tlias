@@ -333,3 +333,5 @@ Caused by: java.io.FileNotFoundException: /private/var/folders/dt/smzbk_3s7tx5n6
 2026-04-29 02:43:13.503 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
 2026-04-29 02:43:13.504 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
 2026-04-29 02:43:13.553 [http-nio-8080-exec-1] INFO  com.example.controller.UploadController-接受参数：张三,18,org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@21bcc415
+2026-04-29 02:43:53.266 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-29 02:43:55.282 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown-Graceful shutdown complete
