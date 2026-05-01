@@ -20,6 +20,12 @@ mybatis:
 
 # 配置日志信息，查看spring事务管理的底层日志
 logging:
-    level:
-        org.springframework.jdbc.support.JdbcTransactionManager: debug
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
 
+# 阿里云OSS
+aliyun:
+  oss:
+    endpoint: https://oss-cn-shanghai.aliyuncs.com
+    bucketName: java-tlias-ai-demo
+    region: cn-shanghai

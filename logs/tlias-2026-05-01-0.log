@@ -248,3 +248,22 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '18809091234'
 2026-05-01 17:06:48.930 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
 2026-05-01 17:06:48.930 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@2049676247 wrapping com.mysql.cj.jdbc.ConnectionImpl@4ceba106]
 2026-05-01 17:06:48.933 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@2049676247 wrapping com.mysql.cj.jdbc.ConnectionImpl@4ceba106] after transaction
+2026-05-01 18:04:02.595 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-01 18:04:04.614 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-05-01 18:04:04.627 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-05-01 18:04:04.633 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-05-01 18:04:09.932 [main] INFO  com.example.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.7 with PID 10961 (/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/target/classes started by li_shuai in /Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias)
+2026-05-01 18:04:09.936 [main] INFO  com.example.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2026-05-01 18:04:11.618 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-05-01 18:04:11.638 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-01 18:04:11.639 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-05-01 18:04:11.640 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-01 18:04:11.714 [main] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer-Root WebApplicationContext: initialization completed in 1725 ms
+2026-05-01 18:04:13.259 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-05-01 18:04:13.310 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-05-01 18:04:13.318 [main] INFO  com.example.TliasWebManagementApplication-Started TliasWebManagementApplication in 3.988 seconds (process running for 5.59)
+2026-05-01 18:05:04.144 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-01 18:05:04.144 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-05-01 18:05:04.145 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2026-05-01 18:05:04.232 [http-nio-8080-exec-1] INFO  com.example.controller.UploadController-文件上传：01 (2).jpg
+2026-05-01 18:05:05.104 [http-nio-8080-exec-1] INFO  com.example.controller.UploadController-文件上传完成，返回访问地址：https://java-tlias-ai-demo.oss-cn-shanghai.aliyuncs.com/2026/05/4a6de14c-8dc7-4f58-88d5-ff7ca619d006.jpg
