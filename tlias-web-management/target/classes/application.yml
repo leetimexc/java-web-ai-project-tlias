@@ -7,6 +7,12 @@ spring:
     url: jdbc:mysql://localhost:3306/tlias
     username: root
     password: 123456
+  servlet:
+    multipart:
+      # 最大单个文件大小
+      max-file-size: 10MB
+      # 最大请求大小（包括所有的文件和表单数据）
+      max-request-size: 100MB
 mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -16,3 +22,4 @@ mybatis:
 logging:
     level:
         org.springframework.jdbc.support.JdbcTransactionManager: debug
+
