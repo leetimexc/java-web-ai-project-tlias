@@ -25,4 +25,18 @@
         </where>
         order by e.update_time desc
     </select>
+
+    <!--根据ID查询员工基本信息及员工的工作经历信息-->
+    <select id="getById" resultType="com.example.pojo.Emp">
+        select
+            e.*,
+            ee.id ee_id,
+            ee.emp_id ee_empid,
+            ee.begin ee_begin,
+            ee.end ee_end,
+            ee.company ee_company,
+            ee.job ee_job
+        from emp e left join emp_expr ee on e.id = ee.emp_id
+        where e.id = #{id}
+    </select>
 </mapper>
