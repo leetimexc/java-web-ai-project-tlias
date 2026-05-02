@@ -155,3 +155,151 @@ org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or nu
 2026-05-02 12:23:07.914 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
 2026-05-02 12:23:08.378 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d0a8121
 2026-05-02 12:23:08.380 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-05-02 23:10:23.628 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-02 23:10:25.653 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-05-02 23:10:25.673 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-05-02 23:10:25.681 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-05-02 23:10:30.843 [main] INFO  com.example.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.7 with PID 28800 (/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/target/classes started by li_shuai in /Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias)
+2026-05-02 23:10:30.847 [main] INFO  com.example.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2026-05-02 23:10:32.027 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-05-02 23:10:32.047 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-02 23:10:32.048 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-05-02 23:10:32.049 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-02 23:10:32.103 [main] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer-Root WebApplicationContext: initialization completed in 1212 ms
+2026-05-02 23:10:32.869 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-05-02 23:10:32.886 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-05-02 23:10:32.891 [main] INFO  com.example.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.517 seconds (process running for 4.109)
+2026-05-02 23:11:07.730 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-02 23:11:07.730 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-05-02 23:11:07.733 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+2026-05-02 23:11:07.963 [http-nio-8080-exec-2] INFO  com.example.controller.EmpController-员工修改，参数：Emp(id=44, username=yangmi, password=123456789, name=杨幂, gender=2, phone=18809091289, job=1, salary=8000, image=https://loremflickr.com/400/400?lock=5126430333542689, entryDate=2026-03-31, deptId=1, createTime=2026-04-20T06:40:06, updateTime=null, deptName=null, exprList=[EmpExpr(id=1, empId=44, begin=1998-10-17, end=1997-11-29, company=laborum qui, job=la), EmpExpr(id=2, empId=44, begin=1981-08-07, end=2013-09-14, company=dolor dolor quis pariatur aute, job=anim in sint)])
+2026-05-02 23:11:07.980 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.example.service.impl.EmpServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2026-05-02 23:11:07.983 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-05-02 23:11:08.474 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11a25bc
+2026-05-02 23:11:08.476 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-05-02 23:11:08.479 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@91935984 wrapping com.mysql.cj.jdbc.ConnectionImpl@11a25bc] for JDBC transaction
+2026-05-02 23:11:08.484 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@91935984 wrapping com.mysql.cj.jdbc.ConnectionImpl@11a25bc] to manual commit
+2026-05-02 23:11:09.023 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction rollback
+2026-05-02 23:11:09.024 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Rolling back JDBC transaction on Connection [HikariProxyConnection@91935984 wrapping com.mysql.cj.jdbc.ConnectionImpl@11a25bc]
+2026-05-02 23:11:09.026 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@91935984 wrapping com.mysql.cj.jdbc.ConnectionImpl@11a25bc] after transaction
+2026-05-02 23:11:09.032 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]-Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 44' at line 14
+### The error may exist in com/example/mapper/EmpMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update emp         set             username = ?,             password = ?,             name = ?,             gender = ?,             phone = ?,             job = ?,             salary = ?,             image = ?,             entry_date = ?,             dept_id = ?,             update_time = ?,         where id = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 44' at line 14
+; bad SQL grammar []] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 44' at line 14
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:383)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy91.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy89.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:348)
+	at jdk.proxy2/jdk.proxy2.$Proxy69.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:249)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy77.updateById(Unknown Source)
+	at com.example.service.impl.EmpServiceImpl.update(EmpServiceImpl.java:133)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.example.service.impl.EmpServiceImpl$$SpringCGLIB$$0.update(<generated>)
+	at com.example.controller.EmpController.update(EmpController.java:109)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-02 23:15:17.015 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-02 23:15:19.028 [tomcat-shutdown] INFO  org.springframework.boot.tomcat.GracefulShutdown-Graceful shutdown complete
+2026-05-02 23:15:19.041 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2026-05-02 23:15:19.053 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2026-05-02 23:15:22.181 [main] INFO  com.example.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.7 with PID 28865 (/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/target/classes started by li_shuai in /Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias)
+2026-05-02 23:15:22.184 [main] INFO  com.example.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2026-05-02 23:15:23.312 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-05-02 23:15:23.329 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-02 23:15:23.331 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-05-02 23:15:23.331 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-02 23:15:23.388 [main] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer-Root WebApplicationContext: initialization completed in 1159 ms
+2026-05-02 23:15:24.161 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-05-02 23:15:24.179 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-05-02 23:15:24.185 [main] INFO  com.example.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.453 seconds (process running for 3.815)
+2026-05-02 23:15:34.374 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-02 23:15:34.374 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-05-02 23:15:34.377 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+2026-05-02 23:15:34.538 [http-nio-8080-exec-2] INFO  com.example.controller.EmpController-员工修改，参数：Emp(id=44, username=yangmi, password=123456789, name=杨幂, gender=2, phone=18809091289, job=1, salary=8000, image=https://loremflickr.com/400/400?lock=5126430333542689, entryDate=2026-03-31, deptId=1, createTime=2026-04-20T06:40:06, updateTime=null, deptName=null, exprList=[EmpExpr(id=1, empId=44, begin=1998-10-17, end=1997-11-29, company=laborum qui, job=la), EmpExpr(id=2, empId=44, begin=1981-08-07, end=2013-09-14, company=dolor dolor quis pariatur aute, job=anim in sint)])
+2026-05-02 23:15:34.551 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.example.service.impl.EmpServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2026-05-02 23:15:34.552 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-05-02 23:15:34.979 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43214a68
+2026-05-02 23:15:34.982 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-05-02 23:15:34.985 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@31578138 wrapping com.mysql.cj.jdbc.ConnectionImpl@43214a68] for JDBC transaction
+2026-05-02 23:15:34.988 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@31578138 wrapping com.mysql.cj.jdbc.ConnectionImpl@43214a68] to manual commit
+2026-05-02 23:15:35.102 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2026-05-02 23:15:35.103 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@31578138 wrapping com.mysql.cj.jdbc.ConnectionImpl@43214a68]
+2026-05-02 23:15:35.109 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@31578138 wrapping com.mysql.cj.jdbc.ConnectionImpl@43214a68] after transaction
