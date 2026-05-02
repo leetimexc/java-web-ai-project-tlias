@@ -69,7 +69,7 @@ public class EmpController {
 
     /**
      * 方式一： 通过数组来接收
-     * 员工删除
+     * 员工删除 - 数组
      */
     /*
     @DeleteMapping
@@ -86,6 +86,7 @@ public class EmpController {
     @DeleteMapping
     public Result delete(@RequestParam List<Integer> ids){
         log.info("员工删除，参数：{}", ids);
+        empService.delete(ids);
         return Result.success();
     }
 }
