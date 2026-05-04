@@ -2,6 +2,7 @@ package com.example.service;
 
 import com.example.pojo.Emp;
 import com.example.pojo.EmpQueryParam;
+import com.example.pojo.LoginInfo;
 import com.example.pojo.PageResult;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -45,4 +46,9 @@ public interface EmpService {
      * 修改员工信息
      */
     void update(Emp emp);
+
+    /*
+     * 员工登录
+     */
+    LoginInfo login(Emp emp);
 }

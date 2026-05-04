@@ -72,4 +72,10 @@ public interface EmpMapper {
      */
     @MapKey("name") // 解决mybatis插件误报，无实际意义，加不加都可以运行成功
     List<Map<String, Objects>> countEmpGenderData();
+
+    /**
+     * 根据用户名和密码查询员工信息
+     */
+    @Select("select id, username, name from emp where username = #{username} and password = #{password}")
+    Emp selectByUsernameAndPassword(Emp emp);
 }
