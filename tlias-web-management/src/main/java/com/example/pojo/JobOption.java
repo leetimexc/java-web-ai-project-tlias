@@ -10,8 +10,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class JobOption {
-
     private List jobList; // 职位列表
     private List dataList; // 数据列表
-
 }

@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.*;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * 员工信息
@@ -66,4 +67,9 @@ public interface EmpMapper {
     @MapKey("pos") // 解决mybatis插件误报，无实际意义
     List<Map<String, Object>> countEmpJobData();
 
+    /**
+     * 统计员工性别人数
+     */
+    @MapKey("name") // 解决mybatis插件误报，无实际意义，加不加都可以运行成功
+    List<Map<String, Objects>> countEmpGenderData();
 }

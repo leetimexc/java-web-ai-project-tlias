@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 @Service
 public class ReportServiceImpl implements ReportService {
@@ -25,5 +26,10 @@ public class ReportServiceImpl implements ReportService {
         List<Object> dataList = list.stream().map(dataMap -> dataMap.get("num")).toList();
 
         return new JobOption(jobList, dataList);
+    }
+
+    @Override
+    public List<Map<String, Objects>> getEmpGenderData() {
+        return empMapper.countEmpGenderData();
     }
 }
