@@ -65,4 +65,5 @@ public interface EmpMapper {
      */
     @MapKey("pos") // 解决mybatis插件误报，无实际意义
     List<Map<String, Object>> countEmpJobData();
+
 }
