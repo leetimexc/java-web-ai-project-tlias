@@ -41,6 +41,15 @@ public class SessionController {
         return Result.success();
     }
 
+    /*
+    2. Session
+      Session是服务器端的数据，存储在服务器端的内存中
+      底层还是基于Cookie的，Cookie只是保存Session的ID，SessionID保存在服务器内存中
+      优点：存储在服务端，安全
+      缺点：
+        1.服务器集群环境下无法直接使用Session
+        2. Cookie上面所有的缺点
+     */
     @GetMapping("/s1")
     public Result session1(HttpSession session){
         log.info("HttpSession-s1: {}", session.hashCode());
