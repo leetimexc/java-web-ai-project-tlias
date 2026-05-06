@@ -67,4 +67,14 @@ public class SessionController {
         log.info("loginUser: {}", loginUser);
         return Result.success(loginUser);
     }
+
+    /*
+    3. 方案3: 令牌
+    优点：
+        1. 支持PC端、移动端
+        2. 解决集群环境（负载均衡）下的认证问题
+        3. 减轻服务器端存储压力
+      缺点：
+        1. 需要自己实现
+     */
 }
