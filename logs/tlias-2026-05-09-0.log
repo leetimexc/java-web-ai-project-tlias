@@ -46,3 +46,35 @@
 2026-05-09 13:41:39.381 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e233d44
 2026-05-09 13:41:39.384 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
 2026-05-09 13:41:39.510 [http-nio-8080-exec-1] INFO  com.example.service.impl.EmpServiceImpl-登录成功，员工登录：Emp(id=2, username=songjiang, password=null, name=宋江, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2026-05-09 14:39:21.674 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s949ms).
+2026-05-09 14:44:34.434 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m12s762ms).
+2026-05-09 14:50:16.343 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m11s894ms).
+2026-05-09 14:53:46.632 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m275ms).
+2026-05-09 14:56:48.584 [SpringApplicationShutdownHook] INFO  org.springframework.boot.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-09 14:56:55.933 [main] INFO  com.example.TliasWebManagementApplication-Starting TliasWebManagementApplication using Java 21.0.7 with PID 4695 (/Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias/tlias-web-management/target/classes started by li_shuai in /Users/li_shuai/我的代码/后端学习/Java项目实战/java-web-ai-project-tlias)
+2026-05-09 14:56:55.936 [main] INFO  com.example.TliasWebManagementApplication-No active profile set, falling back to 1 default profile: "default"
+2026-05-09 14:56:57.215 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2026-05-09 14:56:57.230 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-05-09 14:56:57.232 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-05-09 14:56:57.233 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-09 14:56:57.290 [main] INFO  o.s.b.w.c.servlet.WebApplicationContextInitializer-Root WebApplicationContext: initialization completed in 1296 ms
+2026-05-09 14:56:58.153 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-05-09 14:56:58.171 [main] INFO  org.springframework.boot.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2026-05-09 14:56:58.176 [main] INFO  com.example.TliasWebManagementApplication-Started TliasWebManagementApplication in 2.79 seconds (process running for 4.139)
+2026-05-09 14:57:13.519 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-09 14:57:13.520 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-05-09 14:57:13.522 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2026-05-09 14:58:01.982 [http-nio-8080-exec-1] INFO  com.example.filter.TokenFilter-登录请求，放行...
+2026-05-09 14:58:11.263 [http-nio-8080-exec-4] INFO  com.example.filter.TokenFilter-登录请求，放行...
+2026-05-09 14:58:11.530 [http-nio-8080-exec-4] INFO  com.example.controller.LoginController-员工登录：Emp(id=null, username=songjiang, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2026-05-09 14:58:11.530 [http-nio-8080-exec-1] INFO  com.example.controller.LoginController-员工登录：Emp(id=null, username=songjiang, password=123456, name=null, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2026-05-09 14:58:11.568 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2026-05-09 14:58:12.341 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53760b60
+2026-05-09 14:58:12.348 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2026-05-09 14:58:12.484 [http-nio-8080-exec-4] INFO  com.example.service.impl.EmpServiceImpl-登录成功，员工登录：Emp(id=2, username=songjiang, password=null, name=宋江, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2026-05-09 14:58:12.484 [http-nio-8080-exec-1] INFO  com.example.service.impl.EmpServiceImpl-登录成功，员工登录：Emp(id=2, username=songjiang, password=null, name=宋江, gender=null, phone=null, job=null, salary=null, image=null, entryDate=null, deptId=null, createTime=null, updateTime=null, deptName=null, exprList=null)
+2026-05-09 14:58:52.493 [http-nio-8080-exec-5] INFO  com.example.filter.TokenFilter-令牌为空，响应401
+2026-05-09 15:00:08.546 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s515ms).
+2026-05-09 15:00:36.617 [http-nio-8080-exec-6] INFO  com.example.filter.TokenFilter-令牌为空，响应401
+2026-05-09 15:02:13.889 [http-nio-8080-exec-8] INFO  com.example.filter.TokenFilter-令牌合法，放行
+2026-05-09 15:02:14.840 [http-nio-8080-exec-8] INFO  com.example.controller.ReportController-统计员工性别人数
